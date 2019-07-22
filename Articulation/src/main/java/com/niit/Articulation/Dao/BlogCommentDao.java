@@ -1,0 +1,23 @@
+package com.niit.Articulation.Dao;
+
+import java.util.List;
+
+import com.niit.Articulation.Model.BlogComment;
+
+public interface BlogCommentDao {
+	public List<BlogComment> getAllBlogComments(); //1...
+	
+	public boolean save(BlogComment blogComment);//2...
+	
+	public boolean update(BlogComment blogComment);//3...
+	
+	public boolean saveOrUpdate(BlogComment blogComment);//4...//pending
+	
+	public boolean delete(BlogComment blogComment);//5...
+	
+	public BlogComment getByBlogCommentId(int id);//6...
+	
+	public List<BlogComment> listByBlogId(int id);//7...
+	
+	public List<BlogComment> listByUserId(String id);//8...
+}
